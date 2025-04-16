@@ -1,0 +1,109 @@
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/runner/workspace/src/context/AppContext.js: Identifier 'AppContext' has already been declared. (49:6)
+
+[0m [90m 47 |[39m
+ [90m 48 |[39m [90m// Criar contexto[39m
+[31m[1m>[22m[39m[90m 49 |[39m [36mconst[39m [33mAppContext[39m [33m=[39m createContext()[33m;[39m
+ [90m    |[39m       [31m[1m^[22m[39m
+ [90m 50 |[39m
+ [90m 51 |[39m [90m/**[39m
+ [90m 52 |[39m [90m * Provider component for app state[39m[0m
+    at constructor (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:360:19)
+    at FlowParserMixin.raise (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:3338:19)
+    at FlowScopeHandler.checkRedeclarationInScope (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:1566:19)
+    at FlowScopeHandler.declareName (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:1532:12)
+    at FlowScopeHandler.declareName (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:1633:11)
+    at FlowParserMixin.declareNameFromIdentifier (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:7494:16)
+    at FlowParserMixin.checkIdentifier (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:7490:12)
+    at FlowParserMixin.checkLVal (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:7431:12)
+    at FlowParserMixin.parseVarId (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:13072:10)
+    at FlowParserMixin.parseVarId (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:5711:11)
+    at FlowParserMixin.parseVar (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:13047:12)
+    at FlowParserMixin.parseVarStatement (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:12894:10)
+    at FlowParserMixin.parseStatementContent (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:12515:23)
+    at FlowParserMixin.parseStatementLike (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:12432:17)
+    at FlowParserMixin.parseStatementLike (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:5153:24)
+    at FlowParserMixin.parseModuleItem (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:12409:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:12980:36)
+    at FlowParserMixin.parseBlockBody (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:12973:10)
+    at FlowParserMixin.parseProgram (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:12306:10)
+    at FlowParserMixin.parseTopLevel (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:12296:25)
+    at FlowParserMixin.parseTopLevel (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:5922:28)
+    at FlowParserMixin.parse (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:14152:10)
+    at parse (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:14165:26)
+    at parser (/home/runner/workspace/node_modules/@babel/core/lib/parser/index.js:41:34)
+    at parser.next ()
+    at normalizeFile (/home/runner/workspace/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+    at normalizeFile.next ()
+    at run (/home/runner/workspace/node_modules/@babel/core/lib/transformation/index.js:22:50)
+    at run.next ()
+    at transform (/home/runner/workspace/node_modules/@babel/core/lib/transform.js:22:33)
+    at transform.next ()
+    at step (/home/runner/workspace/node_modules/gensync/index.js:261:32)
+    at /home/runner/workspace/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/home/runner/workspace/node_modules/gensync/index.js:223:11)
+    at /home/runner/workspace/node_modules/gensync/index.js:189:28
+    at /home/runner/workspace/node_modules/@babel/core/lib/gensync-utils/async.js:67:7
+    at /home/runner/workspace/node_modules/gensync/index.js:113:33
+    at step (/home/runner/workspace/node_modules/gensync/index.js:287:14)
+    at /home/runner/workspace/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/home/runner/workspace/node_modules/gensync/index.js:223:11)
+SyntaxError: /home/runner/workspace/src/context/AppContext.js: Identifier 'AppContext' has already been declared. (49:6)
+
+[0m [90m 47 |[39m
+[90m 48 |[39m [90m// Criar contexto[39m
+[31m[1m>[22m[39m[90m 49 |[39m [36mconst[39m [33mAppContext[39m [33m=[39m createContext()[33m;[39m
+[90m |[39m [31m[1m^[22m[39m
+[90m 50 |[39m
+[90m 51 |[39m [90m/**[39m
+[90m 52 |[39m [90m * Provider component for app state[39m[0m
+at constructor (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:360:19)
+at FlowParserMixin.raise (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:3338:19)
+at FlowScopeHandler.checkRedeclarationInScope (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:1566:19)
+at FlowScopeHandler.declareName (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:1532:12)
+at FlowScopeHandler.declareName (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:1633:11)
+at FlowParserMixin.declareNameFromIdentifier (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:7494:16)
+at FlowParserMixin.checkIdentifier (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:7490:12)
+at FlowParserMixin.checkLVal (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:7431:12)
+at FlowParserMixin.parseVarId (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:13072:10)
+at FlowParserMixin.parseVarId (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:5711:11)
+at FlowParserMixin.parseVar (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:13047:12)
+at FlowParserMixin.parseVarStatement (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:12894:10)
+at FlowParserMixin.parseStatementContent (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:12515:23)
+at FlowParserMixin.parseStatementLike (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:12432:17)
+at FlowParserMixin.parseStatementLike (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:5153:24)
+at FlowParserMixin.parseModuleItem (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:12409:17)
+at FlowParserMixin.parseBlockOrModuleBlockBody (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:12980:36)
+at FlowParserMixin.parseBlockBody (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:12973:10)
+at FlowParserMixin.parseProgram (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:12306:10)
+at FlowParserMixin.parseTopLevel (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:12296:25)
+at FlowParserMixin.parseTopLevel (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:5922:28)
+at FlowParserMixin.parse (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:14152:10)
+at parse (/home/runner/workspace/node_modules/@babel/parser/lib/index.js:14165:26)
+at parser (/home/runner/workspace/node_modules/@babel/core/lib/parser/index.js:41:34)
+at parser.next (<anonymous>)
+at normalizeFile (/home/runner/workspace/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+at normalizeFile.next (<anonymous>)
+at run (/home/runner/workspace/node_modules/@babel/core/lib/transformation/index.js:22:50)
+at run.next (<anonymous>)
+at transform (/home/runner/workspace/node_modules/@babel/core/lib/transform.js:22:33)
+at transform.next (<anonymous>)
+at step (/home/runner/workspace/node_modules/gensync/index.js:261:32)
+at /home/runner/workspace/node_modules/gensync/index.js:273:13
+at async.call.result.err.err (/home/runner/workspace/node_modules/gensync/index.js:223:11)
+at /home/runner/workspace/node_modules/gensync/index.js:189:28
+at /home/runner/workspace/node_modules/@babel/core/lib/gensync-utils/async.js:67:7
+at /home/runner/workspace/node_modules/gensync/index.js:113:33
+at step (/home/runner/workspace/node_modules/gensync/index.js:287:14)
+at /home/runner/workspace/node_modules/gensync/index.js:273:13
+at async.call.result.err.err (/home/runner/workspace/node_modules/gensync/index.js:223:11)
+at ./src/context/AppContext.js (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:118616:7)
+at __webpack_require__ (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:122979:32)
+at fn (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:123238:21)
+at ./App.js (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:26:81)
+at __webpack_require__ (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:122979:32)
+at fn (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:123238:21)
+at ./node_modules/expo/AppEntry.js (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:34506:62)
+at __webpack_require__ (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:122979:32)
+at https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:124155:37
+at https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:124157:12

@@ -1,0 +1,39 @@
+Uncaught TypeError: loadInitialData is not a function
+    at HomeScreen.js:22:1
+    at useEventEmitter.tsx:133:1
+    at Array.forEach (<anonymous>)
+    at Object.emit (useEventEmitter.tsx:133:1)
+    at useFocusEvents.tsx:53:1
+    at commitHookEffectListMount (react-dom.development.js:23150:1)
+    at commitPassiveMountOnFiber (react-dom.development.js:24926:1)
+    at commitPassiveMountEffects_complete (react-dom.development.js:24891:1)
+    at commitPassiveMountEffects_begin (react-dom.development.js:24878:1)
+    at commitPassiveMountEffects (react-dom.development.js:24866:1)Understand this errorAI
+webStorage.js:20 Web storage initialized successfully
+hook.js:608 The above error occurred in the <BottomTabNavigator> component:
+
+    at BottomTabNavigator (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:5608:17)
+    at EnsureSingleNavigator (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:7166:23)
+    at BaseNavigationContainer (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:6829:27)
+    at ThemeProvider (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:12242:20)
+    at NavigationContainerInner (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:11909:25)
+    at AppProvider (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:115541:23)
+    at App
+    at withDevTools(App)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+overrideMethod @ hook.js:608Understand this errorAI
+react-dom.development.js:12056 Uncaught TypeError: loadInitialData is not a function
+    at HomeScreen.js:22:1
+    at useEventEmitter.tsx:133:1
+    at Array.forEach (<anonymous>)
+    at Object.emit (useEventEmitter.tsx:133:1)
+    at useFocusEvents.tsx:53:1
+    at commitHookEffectListMount (react-dom.development.js:23150:1)
+    at commitPassiveMountOnFiber (react-dom.development.js:24926:1)
+    at commitPassiveMountEffects_complete (react-dom.development.js:24891:1)
+    at commitPassiveMountEffects_begin (react-dom.development.js:24878:1)
+    at commitPassiveMountEffects (react-dom.development.js:24866:1)Understand this errorAI
+useDatabase.js:65 Database initialized (web)
+useDatabase.js:89 Loaded 0 readings from web storage

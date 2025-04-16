@@ -1,0 +1,131 @@
+implementar o sistema de roteiro diário offline/online para o app do leiturista.
+
+✅ VISÃO GERAL
+O objetivo é:
+
+Sincronizar o roteiro do dia com Supabase.
+
+Salvar localmente (SQLite ou AsyncStorage).
+
+Exibir uma tela com ruas e casas.
+
+Permitir marcar como "visitada".
+
+Enviar leituras para o Supabase assim que estiver online.
+
+🧠 FUNCIONALIDADES PRINCIPAIS
+🔄 1. Sincronizar roteiro quando online
+No início do dia (ou no final do dia anterior), ao detectar conexão:
+
+ts
+Copiar
+Editar
+// services/syncService.ts
+import { supabase } from './supabaseClient';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
+export async function syncRoteiroDoDia(data: string) {
+  const { data: roteiro, error } = await supabase
+    .from('roteiros')
+    .select('*')
+    .eq('data', data);
+
+  if (error) throw error;
+
+  await AsyncStorage.setItem(`roteiro-${data}`, JSON.stringify(roteiro));
+}
+📦 2. Salvar localmente com AsyncStorage ou SQLite
+Com AsyncStorage (mais simples):
+ts
+Copiar
+Editar
+// salvar
+await AsyncStorage.setItem('roteiro-2025-03-30', JSON.stringify(roteiro));
+
+// ler
+const json = await AsyncStorage.getItem('roteiro-2025-03-30');
+const roteiro = json ? JSON.parse(json) : [];
+📱 3. Exibir a tela com o roteiro
+Crie uma tela que organize os dados por rua e exiba os números com checkboxes.
+
+tsx
+Copiar
+Editar
+// components/RoteiroList.tsx
+{
+  roteiroAgrupado.map((rua, index) => (
+    <View key={index}>
+      <Text style={styles.ruaTitulo}>📍 {rua.nome}</Text>
+      {rua.casas.map((casa) => (
+        <TouchableOpacity key={casa.numero} onPress={() => marcarComoVisitada(casa)}>
+          <Text style={casa.visitada ? styles.lida : styles.pendente}>
+            {casa.numero} {casa.visitada ? '✔️' : '⏳'}
+          </Text>
+        </TouchableOpacity>
+      ))}
+    </View>
+  ))
+}
+🟢 4. Detectar conexão e sincronizar
+ts
+Copiar
+Editar
+import NetInfo from '@react-native-community/netinfo';
+
+NetInfo.fetch().then(state => {
+  if (state.isConnected) {
+    // sincroniza roteiro e envia leituras pendentes
+  }
+});
+📝 5. Marcar casa como visitada
+Atualize o campo visitada = true localmente (no AsyncStorage ou SQLite), e salve com timestamp.
+
+ts
+Copiar
+Editar
+function marcarComoVisitada(casa) {
+  casa.visitada = true;
+  casa.horario = new Date().toISOString();
+  atualizarLocalmente(); // salva no storage
+}
+📤 6. Quando online, enviar leituras
+Verifica quais leituras têm visitada = true && enviada = false.
+
+Envia para Supabase com dados:
+
+cliente_id
+
+valor da leitura
+
+data/hora
+
+foto (se tiver)
+
+🗂️ Estrutura de dados sugerida localmente (AsyncStorage ou SQLite)
+ts
+Copiar
+Editar
+{
+  data: '2025-03-30',
+  roteiro: [
+    {
+      rua: 'Rua Getúlio Vargas',
+      casas: [
+        { numero: '123', cliente_id: 'abc123', visitada: false },
+        { numero: '125', cliente_id: 'abc124', visitada: true, leitura: 131187, horario: '2025-03-30T08:30' }
+      ]
+    }
+  ]
+}
+✅ Checklist do que seu programador precisa implementar:
+ Função para buscar roteiro do dia no Supabase.
+
+ Armazenar roteiro localmente (AsyncStorage ou SQLite).
+
+ Tela com agrupamento por rua e checklist de casas.
+
+ Detecção de conexão para sincronizar.
+
+ Enviar leituras pendentes ao Supabase quando online.
+
+ Tela com indicador de progresso: "3 de 10 casas lidas".

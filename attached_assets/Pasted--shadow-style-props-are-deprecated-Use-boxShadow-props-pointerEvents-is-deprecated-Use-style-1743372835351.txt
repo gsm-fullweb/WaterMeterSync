@@ -1,0 +1,53 @@
+"shadow*" style props are deprecated. Use "boxShadow".
+props.pointerEvents is deprecated. Use style.pointerEvents
+Cannot read properties of undefined (reading 'slice')
+Cannot read properties of undefined (reading 'slice')
+The above error occurred in the <HomeScreen> component:
+
+    at HomeScreen (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:119692:25)
+    at StaticContainer (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:7667:16)
+    at EnsureSingleNavigator (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:7224:23)
+    at SceneView (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:7557:21)
+    at div
+    at https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:90798:25
+    at div
+    at https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:90798:25
+    at Background (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:10941:20)
+    at Screen (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:12103:100)
+    at div
+    at https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:90798:25
+    at ResourceSavingScene (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:11898:22)
+    at MaybeScreen (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:6704:23)
+    at div
+    at https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:90798:25
+    at MaybeScreenContainer (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:6693:22)
+    at div
+    at https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:90798:25
+    at SafeAreaProviderCompat (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:11988:23)
+    at BottomTabView (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:6528:29)
+    at PreventRemoveProvider (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:7467:24)
+    at NavigationContent (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:8895:21)
+    at https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:8906:26
+    at BottomTabNavigator (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:5666:17)
+    at MainTabNavigator
+    at StaticContainer (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:7667:16)
+    at EnsureSingleNavigator (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:7224:23)
+    at SceneView (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:7557:21)
+    at div
+    at https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:90798:25
+    at div
+    at https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:90798:25
+    at div
+    at https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:90798:25
+    at Background (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:10941:20)
+    at Screen (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:12103:100)
+    at div
+    at https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:90798:25
+    at SafeAreaFrameProvider (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:12007:30)
+    at div
+    at https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:90798:25
+    at NativeSafeAreaProvider (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:84152:23)
+    at SafeAreaProvider (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:84305:23)
+    at SafeAreaProviderCompat (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:11988:23)
+    at NativeStackView (https://d7ede907-4d40-4f80-8d24-7bb534e1c7ec-00-13zw3vjnbnxk1.picard.replit.dev:3000/static/js/bundle.js:12328:20)
+    at PreventRemoveProvider…

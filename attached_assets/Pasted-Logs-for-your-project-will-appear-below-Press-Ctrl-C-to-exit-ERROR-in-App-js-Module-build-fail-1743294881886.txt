@@ -1,0 +1,30 @@
+Logs for your project will appear below. Press Ctrl+C to exit.
+ERROR in ./App.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+Error: /home/runner/workspace/App.js: Use process(css).then(cb) to work with async plugins
+    at LazyResult.getAsyncError (/home/runner/workspace/node_modules/postcss/lib/lazy-result.js:206:11)
+    at LazyResult.sync (/home/runner/workspace/node_modules/postcss/lib/lazy-result.js:401:20)
+    at LazyResult.stringify (/home/runner/workspace/node_modules/postcss/lib/lazy-result.js:373:10)
+    at get css [as css] (/home/runner/workspace/node_modules/postcss/lib/lazy-result.js:113:17)
+    at extractStyles (/home/runner/workspace/node_modules/nativewind/dist/postcss/extract-styles.js:32:54)
+    at PluginPass.enter (/home/runner/workspace/node_modules/nativewind/dist/babel/index.js:100:67)
+    at newFn (/home/runner/workspace/node_modules/@babel/traverse/lib/visitors.js:172:14)
+    at NodePath._call (/home/runner/workspace/node_modules/@babel/traverse/lib/path/context.js:49:20)
+    at NodePath.call (/home/runner/workspace/node_modules/@babel/traverse/lib/path/context.js:39:18)
+    at NodePath.visit (/home/runner/workspace/node_modules/@babel/traverse/lib/path/context.js:88:31)
+    at TraversalContext.visitQueue (/home/runner/workspace/node_modules/@babel/traverse/lib/context.js:90:16)
+    at TraversalContext.visitSingle (/home/runner/workspace/node_modules/@babel/traverse/lib/context.js:66:19)
+    at TraversalContext.visit (/home/runner/workspace/node_modules/@babel/traverse/lib/context.js:113:19)
+    at traverseNode (/home/runner/workspace/node_modules/@babel/traverse/lib/traverse-node.js:22:17)
+    at traverse (/home/runner/workspace/node_modules/@babel/traverse/lib/index.js:53:34)
+    at transformFile (/home/runner/workspace/node_modules/@babel/core/lib/transformation/index.js:80:31)
+    at transformFile.next (<anonymous>)
+    at run (/home/runner/workspace/node_modules/@babel/core/lib/transformation/index.js:25:12)
+    at run.next (<anonymous>)
+    at transform (/home/runner/workspace/node_modules/@babel/core/lib/transform.js:22:33)
+    at transform.next (<anonymous>)
+    at step (/home/runner/workspace/node_modules/gensync/index.js:261:32)
+    at /home/runner/workspace/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/home/runner/workspace/node_modules/gensync/index.js:223:11)
+
+web compiled with 1 error
